@@ -30,6 +30,18 @@ li a {
     font-size: 15px;
   }
 
+ a:link {
+    color: black;
+}
+
+a:visited {
+    color:red;
+}
+
+a:hover {
+    color: blueviolet;
+  }
+
 .container {
     position: relative;
     text-align:center;
@@ -157,6 +169,8 @@ table, td, th {
     border-collapse: collapse;
     width: 100%;
     font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
   }
 
   .bucketlist {
@@ -211,3 +225,6 @@ table, td, th {
   [class*="grid-item-"] {
     width: 100%;
   }
+
+
+
