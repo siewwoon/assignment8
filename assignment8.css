@@ -54,11 +54,47 @@ img {
 }
 
 .centreleft {
+
     box-sizing: border-box;
     position: absolute;
-    top:50px;
-    left:10px;
-    display: inline-block;
+    top: 3px;
+    left: 10px;
+    display: block;
+    letter-spacing: 1px;
+
+}
+
+@keyframes moveInLeft {
+    0% { 
+        opacity: 0;
+        transform: translateX {-10px};
+
+    }
+
+    70% {
+        transform: translateX {28px};
+
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% { 
+        opacity: 0;
+        transform: translateX {10px};
+
+    }
+
+    70% {
+        transform: translateX {28px};
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 .bigtitle {
@@ -66,6 +102,10 @@ img {
     text-shadow: grey;
     font-style: italic;
     font-size: 40px;
+    font-weight: 35px;
+    animation-name: moveInLeft;
+    animation-duration: 5s;
+   
 }
 
 .designation{
@@ -73,6 +113,10 @@ img {
     text-shadow: grey;
     font-style: italic;
     font-size: 25px;
+    font-weight: 35px;
+    animation-name: moveInRight;
+    animation-duration: 5s;
+ 
 }
 
 
@@ -97,6 +141,11 @@ img {
     box-sizing: border-box;
     background: whitesmoke;
     height: 200px;
+    letter-spacing: 1px;
+}
+
+.p {
+    letter-spacing: 1px;
 }
 
 .skillsets {
@@ -105,6 +154,7 @@ img {
     box-sizing: border-box;
     background-color:whitesmoke;
     height: 60%;
+    letter-spacing: 1px;
 }
 
 .languagebox {
@@ -128,6 +178,7 @@ img {
 .languagebox p:nth-child(2) 
 {   float: right;
     position: relative;
+    top: -28px;
 }
 
 .skill {
@@ -159,10 +210,12 @@ img {
     background-color:#dbe6ec ;
     margin:10px;
     padding: 10px;
+    letter-spacing: 1px;
 }
 
 table, td, th {
     border: none;
+    letter-spacing: 1px;
   }
   
   table {
@@ -170,7 +223,7 @@ table, td, th {
     width: 100%;
     font-size: 20px;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
 
   .bucketlist {
@@ -202,8 +255,9 @@ table, td, th {
 
 .logo {
     width: 50px;
-    height: 50px;
+    height: 50px;  
 }
+
 
 .contactform {
     grid-column:2/6;
@@ -225,6 +279,4 @@ table, td, th {
   [class*="grid-item-"] {
     width: 100%;
   }
-
-
-
+}
